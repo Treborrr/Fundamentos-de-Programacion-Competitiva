@@ -1,0 +1,30 @@
+
+Ejercicio 02
+
+2.	Desarrollar un programa que permita ingresar un número de 5 cifras, y te muestra la suma de la siguiente manera. 
+Ejemplo: 
+Ingresar número: 42368
+42 + 3 + 68 = 113.
+
+
+#include "pch.h"
+#include<iostream>
+using namespace std;
+using namespace System;
+
+int main()
+{
+    int num,part1,part2,part3,resultado;
+
+        cout << "\nIngresar n" << char(163) << "mero: ";
+        cin >> num;
+  
+        part1 = num / 1000;
+        part2 = num % 100;
+        part3 = (num / 100) % 10;
+        resultado = part1 + part2 + part3;
+        cout << "\nEl resultado de la suma es: " << resultado;
+    cin.get();
+    return 0;
+}
+

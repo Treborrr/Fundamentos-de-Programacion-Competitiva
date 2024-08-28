@@ -1,0 +1,40 @@
+Ejercicio 01:
+
+1.	Desarrollar un programa que permita leer 4 números y los muestre ordenados de forma descendente.
+
+
+#include "pch.h"
+#include<iostream>
+using namespace std;
+using namespace System;
+
+int main()
+{
+    int a[4],i,j,temp;
+
+    for (i = 0; i < 4; i++)
+    {
+        cout << "\nIngresar n" << char(163) << "mero: ";
+        cin >> a[i];
+    }
+
+    for (i = 0; i < 4; i++)
+    {
+        for (j = 0; j < 4; j++)
+        {
+            if (a[i] > a[j])
+            {
+                temp = a[i];
+                a[i] = a[j];
+                a[j] = temp;
+            }
+        }
+    }
+
+    for (i = 0; i < 4; i++)
+    {
+        cout << a[i]<< " " ;
+    }
+    cin.get();
+    return 0;
+}
