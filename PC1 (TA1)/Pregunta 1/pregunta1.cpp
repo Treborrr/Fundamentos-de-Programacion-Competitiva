@@ -65,7 +65,7 @@ vector<int> secuenciaPrimos(int limite) {
 int main() {
     srand(time(0));
 
-    // Generar los contenedores V1, V2 y V3
+    // Generar los contenedores (V1, V2 y V3)
     vector<int> V1 = generarContenedor(rand() % 16 + 5);
     vector<int> V2 = generarContenedor(rand() % 16 + 5);
     vector<int> V3 = generarContenedor(rand() % 16 + 5);
