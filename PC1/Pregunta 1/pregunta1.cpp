@@ -18,12 +18,12 @@ bool esPerfecto(int num) {
     return suma == num;
 }
 
-// Función para generar números aleatorios entre 1 y 500
+// Función para generar numeros aleatorios entre 1 y 500
 int numeroAleatorio() {
     return rand() % 500 + 1;
 }
 
-// Función para generar un contenedor con números aleatorios
+// Funcion para generar un contenedor con numeros aleatorios
 vector<int> generarContenedor(int tam) {
     vector<int> contenedor;
     for (int i = 0; i < tam; ++i) {
@@ -32,7 +32,7 @@ vector<int> generarContenedor(int tam) {
     return contenedor;
 }
 
-// Función para sumar los dígitos de un número
+// Funcion para sumar los digitos de un número
 int sumaDigitos(int num) {
     int suma = 0;
     while (num > 0) {
@@ -42,7 +42,7 @@ int sumaDigitos(int num) {
     return suma;
 }
 
-// Función para verificar si un número es primo
+// Funcion para verificar si un numero es primo
 bool esPrimo(int num) {
     if (num <= 1) return false;
     for (int i = 2; i <= num / 2; ++i) {
@@ -83,7 +83,7 @@ int main() {
     for (int num : V3) cout << num << " ";
     cout << endl;
 
-    // 1. Verificar números perfectos y sumar sus dígitos
+    // Verificar números perfectos y sumar sus dígitos
     auto verificarPerfectosYSumarDigitos = [](const vector<int>& contenedor) {
         int sumaTotal = 0;
         for (int num : contenedor) {
@@ -103,7 +103,7 @@ int main() {
     cout << "V2: " << sumaV2 << " (menor)" << endl;
     cout << "V3: " << sumaV3 << endl;
 
-    // 2. Sumar elementos pares y determinar el mayor
+    // sumar elementos pares y determinar el mayor
     auto sumarPares = [](const vector<int>& contenedor) {
         return accumulate(contenedor.begin(), contenedor.end(), 0, [](int suma, int num) {
             return suma + (num % 2 == 0 ? num : 0);
@@ -119,7 +119,7 @@ int main() {
     cout << "V2: " << sumaParesV2 << endl;
     cout << "V3: " << sumaParesV3 << " (mayor)" << endl;
 
-    // 3. Identificar elementos repetidos de V1 en V2 y V3
+    // identificar elementos repetidos de V1 en V2 y V3
     cout << "Elementos repetidos de V1 en V2 y V3:" << endl;
     for (int num : V1) {
         int countNum = count(V2.begin(), V2.end(), num) + count(V3.begin(), V3.end(), num);
@@ -135,12 +135,12 @@ int main() {
         }
     }
 
-    // 4. Secuencia de números primos del mayor elemento de todos los contenedores
+    // secuencia de números primos del mayor elemento de todos los contenedores
     int mayorElemento = max({*max_element(V1.begin(), V1.end()), *max_element(V2.begin(), V2.end()), *max_element(V3.begin(), V3.end())});
     vector<int> primos = secuenciaPrimos(mayorElemento);
 
     cout << "Elemento mayor: " << mayorElemento << endl;
-    cout << "Secuencia de números primos: ";
+    cout << "Secuencia de numeros primos: ";
     for (int primo : primos) cout << primo << " ";
     cout << endl;
 

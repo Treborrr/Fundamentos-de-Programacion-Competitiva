@@ -1,11 +1,11 @@
-// Uso de Vectores, Set o Multiset
-/* Crear cuatro contenedores de números enteros V1, V2, V3 y V4.
-Aporte:
+# Pregunta 1: Contenedores (10 puntos) – Uso de Vectores, Set o Multiset
+Crear cuatro contenedores de números enteros V1, V2, V3 y V4.
+### Aporte:
 Se requiere la implementación de tres estructuras de datos, denominadas V1, V2, y V3, que
 almacenen números enteros. Cada estructura deberá inicializarse con una cantidad de
 elementos aleatoria, comprendida entre 5 y 20. Es imperativo que todos los números
 contenidos sean positivos y no superen el valor de 500.
-Producción:
+### Producción:
 1. Se desea conocer si los contenedores V1, V2, y V3, cuentan con números perfectos de
 uno, dos y tres cifras, mostrar la suma de los dígitos de estos números perfectos por
 cada contenedor, y quien es el menor de ellos .
@@ -52,6 +52,8 @@ Resultado:
 Elemento mayor: 25
 Secuencia de números primos: 2, 3, 5, 7, 11, 13, 17, 19, 23
 
+# Rubrica:
+![](src/Rubrica.png)
 
-
-*/
+# Terminal Output:
+![](src/output.png)
