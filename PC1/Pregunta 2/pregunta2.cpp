@@ -28,7 +28,7 @@ int main() {
         cin >> candidatos[i].votos;
 
         if (candidatos[i].votos < 0 || candidatos[i].votos > 500) {
-            cout << "El número de votos debe estar entre 0 y 500." << endl;
+            cout << "El numero de votos debe estar entre 0 y 500." << endl;
             return 1;
         }
     }
