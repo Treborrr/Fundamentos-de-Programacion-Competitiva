@@ -1,8 +1,7 @@
+// g++ -o example example.cpp
 #include <iostream>
 using namespace std;
+int main(){
 
-int main(void){
-    
-    cout << "Hola mundo"<< endl;
-    return 0;
+	return 0;
 }
