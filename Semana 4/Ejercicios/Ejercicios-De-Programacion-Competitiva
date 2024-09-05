@@ -1,0 +1,255 @@
+# EJERCICIOS DE PROGRAMACIÓN COMPETITIVA
+
+## EJERCICIO 01: Salario Bonus
+
+Escriba un programa que lea el nombre de un vendedor, su salario fijo y el total de las ventas realizadas por él en el mes (en dinero). Considerando que el vendedor recibe un 15% de los productos vendidos, escribir el salario final (total) de cada vendedor a fin de mes.
+
+- No olvide de imprimir un final de línea luego del resultado, de otra forma recibirá "Presentation Error".
+- No olvide los espacios en blanco.
+
+### Entrada
+
+La entrada contiene un texto (primer nombre del empleado), y dos valores de doble precisión, los cuales representan el salario del vendedor y el valor total vendido por él.
+
+### Salida
+
+Imprimir el salario total del vendedor, de acuerdo con los ejemplos.
+
+#### Ejemplo de entrada
+
+```
+JOAO
+500.00
+1230.30
+```
+
+#### Ejemplo de salida
+
+```
+TOTAL = R$ 684.54
+```
+
+#### Ejemplo de entrada
+
+```
+PEDRO
+700.00
+0.00
+```
+
+#### Ejemplo de salida
+
+```
+TOTAL = R$ 700.00
+```
+
+#### Ejemplo de entrada
+
+```
+MANGOJATA
+1700.00
+1230.50
+```
+
+#### Ejemplo de salida
+
+```
+TOTAL = R$ 1884.58
+```
+
+---
+
+## EJERCICIO 02: Fibonacci
+
+La siguiente secuencia de números 0 1 1 2 3 5 8 13 21 ... se conoce como la secuencia de Fibonacci. A partir de entonces, cada número después de los primeros 2 es igual a la suma de los dos números anteriores. Escriba un algoritmo que lea un número entero N (N < 46) y que imprima los primeros N números de esta secuencia.
+
+### Entrada
+
+El archivo de entrada contiene un número entero N (0 < N < 46).
+
+### Salida
+
+Los números deben estar impresos en la misma línea, separados por un espacio en blanco. No hay espacio después del último número.
+
+#### Ejemplo de entrada
+
+```
+5
+```
+
+#### Ejemplo de salida
+
+```
+0 1 1 2 3
+```
+
+---
+
+## EJERCICIO 03: Billetes y Monedas
+
+Recibir un valor de punto flotante. Este valor representa un valor monetario. Luego de esto, calcular el menor número posible de billetes y monedas en los cuales su valor puede ser descompuesto. Los billetes a tener en cuenta son de 100, 50, 20, 10, 5, 2. Las monedas posibles son de 1 y 0.50. Mostrar el mensaje "NOTAS:" seguido de una lista de billetes y el mensaje "MONEDAS:" seguido de una lista de monedas.
+
+### Entrada
+
+El archivo de entrada contiene un valor de punto flotante N (0 ≤ N ≤ 1000000.00).
+
+### Salida
+
+Mostrar la mínima cantidad de billetes y monedas necesarias para cambiar el valor inicial, como en el ejemplo dado.
+
+#### Ejemplo de entrada
+
+```
+576.73
+```
+
+#### Ejemplo de salida
+
+```
+NOTAS:
+5 nota(s) de R$ 100.00
+1 nota(s) de R$ 50.00
+1 nota(s) de R$ 20.00
+0 nota(s) de R$ 10.00
+1 nota(s) de R$ 5.00
+0 nota(s) de R$ 2.00
+
+MONEDAS:
+1 moneda(s) de R$ 1.00
+1 moneda(s) de R$ 0.50
+```
+
+#### Ejemplo de entrada
+
+```
+4.00
+```
+
+#### Ejemplo de salida
+
+```
+NOTAS:
+0 nota(s) de R$ 100.00
+0 nota(s) de R$ 50.00
+0 nota(s) de R$ 20.00
+0 nota(s) de R$ 10.00
+0 nota(s) de R$ 5.00
+2 nota(s) de R$ 2.00
+
+MONEDAS:
+0 moneda(s) de R$ 1.00
+0 moneda(s) de R$ 0.50
+```
+
+---
+
+## EJERCICIO 04: Número Perfecto
+
+En matemáticas, un número perfecto es un número entero para el cual la suma de todos sus divisores positivos (excluyéndose a sí mismo) es igual al número mismo. Por ejemplo, el número 6 es perfecto, porque 1+2+3 es igual a 6. Tu tarea es escribir un programa que lea números enteros e imprima un mensaje informando si estos números son perfectos o no.
+
+### Entrada
+
+La entrada contiene varios casos de prueba. El primero contiene el número de casos de prueba N (1 ≤ N ≤ 100). Cada una de las siguientes N líneas contiene un número entero X (1 ≤ X ≤ 10^8), que puede ser o no un número perfecto.
+
+### Salida
+
+Para cada caso de prueba, imprima el mensaje "X es perfecto" o "X no es perfecto" de acuerdo con la especificación anterior.
+
+#### Ejemplo de entrada
+
+```
+3
+6
+5
+28
+```
+
+#### Ejemplo de salida
+
+```
+6 es perfecto
+5 no es perfecto
+28 es perfecto
+```
+
+---
+
+## EJERCICIO 05: Vector
+
+En este problema, su tarea es leer una matriz A[100]. Al final, imprima todas las posiciones de la matriz que almacenan un número menor o igual a 10 y el número almacenado en esa posición.
+
+### Entrada
+
+La entrada contiene 100 números. Cada número puede ser entero, número de punto flotante, positivo o negativo.
+
+### Salida
+
+Para cada número de la matriz que sea igual a 10 o menos, imprima "A[i] = x", donde i es la posición de la matriz y x es el número almacenado en la posición, con un dígito después del punto decimal.
+
+#### Ejemplo de entrada
+
+```
+0
+-5
+63
+-8.5
+```
+
+#### Ejemplo de salida
+
+```
+A[0] = 0.0
+A[1] = -5.0
+A[3] = -8.5
+```
+
+---
+
+## EJERCICIO 06: Cartas Retiradas
+
+Dado una baraja ordenada de n cartas numeradas del 1 al n con la carta 1 en la parte superior y la carta n en la parte inferior.
+
+La siguiente operación debe hacer que el sistema te pida un número de ese rango, retirar las cartas impares desde 1 hasta la carta ingresada.
+
+Cuando el sistema te pide en la segunda vez otra carta, se debe retirar las cartas pares desde 1 hasta la carta ingresada.
+
+Cuando el sistema te pide en la tercera vez otra carta, se debe retirar las cartas múltiplos de 3 desde 1 hasta la carta ingresada.
+
+Cuando ya te ha pedido 3 veces, te debe pedir una carta, y debe mostrar las cartas que no fueron retiradas.
+
+### Entrada
+
+Cada línea contiene un número entero.
+
+### Salida
+
+Para cada caso de prueba, mostrar las cartas rechazadas e indicar la carta ingresada.
+
+#### Ejemplo de entrada
+
+```
+7
+22
+15
+25
+```
+
+#### Ejemplo de salida
+
+```
+Cartas retiradas: 1, 3, 5, 7
+Carta ingresada: 7
+
+Cartas retiradas: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22
+Carta ingresada: 22
+
+Cartas retiradas: 3, 6, 9, 12, 15
+Carta ingresada: 15
+
+Resultados:
+Cartas no retiradas: 11, 13, 17, 19, 21, 23, 24, 25
+Carta ingresada: 25
+```
+```
+
+Este es el contenido del PDF transcrito para que lo puedas utilizar en formato Markdown.

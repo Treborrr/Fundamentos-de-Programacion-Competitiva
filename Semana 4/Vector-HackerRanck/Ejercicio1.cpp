@@ -20,9 +20,6 @@ int main(){
   for (auto elem : v)
 
     cout << elem << " ";
-
-
-
   do {
 
     cin >> x;
